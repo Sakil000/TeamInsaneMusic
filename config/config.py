@@ -10,41 +10,41 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "26792767"))
+API_HASH = getenv("API_HASH", "d5892fe7d458bff884fde1f1efbaadf3")
 
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "6325577627:AAEX9rcDUArFBPn8f1tf3-dymaohWEgdghI")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Inaya:Inaya@inaya.wbxxiws.mongodb.net/?retryWrites=true&w=majority")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "900"))
 
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001923845903"))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "InayaMusic")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "6024212623").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
-BOT_ID = getenv("BOT_ID")
+BOT_ID = getenv("BOT_ID", "6325577627")
 
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TheTeamInsane/TeamInsaneMusic",
+    "https://github.com/sakil000/TeamInsaneMusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", None)
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", None)
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Vip_Sakil_Bio")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Vip_Sakil_Bio")
 
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", False)
 
 AUTO_LEAVE_ASSISTANT_TIME = int(getenv("ASSISTANT_LEAVE_TIME", "5400"))
 
@@ -62,8 +62,8 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 GITHUB_REPO = getenv("GITHUB_REPO", None)
 
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "cedb7e72e71a4ffb924507be68de51ca")
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "c053dde8eafa44caa05269363088820c")
 
 VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "3"))
 
@@ -78,7 +78,7 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQBMcWgv7bA18_d-QT0v67paNDqyvFn3ci3s4txjkWcW7Jq518zRQ6s00YkEBUZP3dynGcLbvbVRNaPf1hbZ-rWPV26hdNlBqtdDQHqUhg2O_9ub76stOAhMNdLpjjs_RQUF3KE6dpdfIgdnwF7TMEo_jkIdNXNwqUvcfd4zLcoGjJtO67v1ZveVhGKZI7kb36r_MRlLexqe0zK-cM_s4RyzS75idDDQBB6qgqr089U-zPR7p-5CzJasKpeta5pzyG1TOSEW0oXzRBjdZd0XGQViL_n0vhOVkBDbFm_psAszEQvj2fQbCnFUGhvpfAX9cMqep6rBCuSk-XnRQWZJu4mwAAAAAVtc-zoA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -97,27 +97,27 @@ clean = {}
 autoclean = []
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/e5938d9ca8fb7c2724f80.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/bce7fb03ce073b0e70bc2.jpg"
 )
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "assets/Ping.jpeg",
+    "https://telegra.ph/file/f9169b493826eb14bd1a3.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "assets/Playlist.jpeg",
+    "https://telegra.ph/file/a84cf350aeb2800b94708.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
     "GLOBAL_IMG_URL",
-    "assets/Global.jpeg",
+    "https://telegra.ph/file/e3063dd280b3598d04511.jpg",
 )
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "assets/Stats.jpeg",
+    "https://telegra.ph/file/042aad7f7d8c4b4d71f1f.jpg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
